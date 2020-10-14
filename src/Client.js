@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 function search(query, cb) {
-  return fetch(`api/food?q=${query}`, {
-    accept: 'application/json',
+  return fetch(`https://foodlookupapi.herokuapp.com/api/food?q=${query}`, {
+    accept: 'application/json', mode: 'cors'
   }).then(checkStatus)
     .then(parseJSON)
     .then(cb);
