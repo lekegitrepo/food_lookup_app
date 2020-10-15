@@ -8,6 +8,8 @@ function search(query, cb) {
 }
 
 function checkStatus(response) {
+  console.log('raw response: ', response)
+  console.log('convert to json response: ', response.json())
   if (response.status >= 200 && response.status < 300) {
     return response;
   }
