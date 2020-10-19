@@ -5,6 +5,7 @@ export default function SelectedFoods(props) {
 
   const foodRows = foods.map((food, idx) => (
     <tr
+      className='selected__food'
       key={idx}
       onClick={() => props.onFoodClick(idx)}
     >
@@ -21,7 +22,7 @@ export default function SelectedFoods(props) {
       <thead>
         <tr>
           <th colSpan='5'>
-            <h3 className='selected__header'>Selected foods</h3>
+            <h3 className='selectedfood__header'>Selected foods</h3>
           </th>
         </tr>
         <tr>

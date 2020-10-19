@@ -1,8 +1,16 @@
-.selected__header {
+.selectedfood__header {
   text-align: center;
   text-transform: uppercase;
 }
 
+.selected__food {
+  cursor: pointer;
+}
+
 .remove {
   color: #ff0000;
+}
+
+.food__detail, .remove, .selected__food {
+  cursor: pointer;
 }

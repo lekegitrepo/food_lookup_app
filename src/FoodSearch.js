@@ -50,6 +50,7 @@ class FoodSearch extends React.Component {
 
     const foodRows = foods.map((food, idx) => (
       <tr
+        className='food__detail'
         key={idx}
         onClick={() => this.props.onFoodClick(food)}
       >
