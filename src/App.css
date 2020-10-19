@@ -14,3 +14,7 @@
 .food__detail, .remove, .selected__food {
   cursor: pointer;
 }
+
+.food-search {
+  margin-bottom: 2em;
+}
