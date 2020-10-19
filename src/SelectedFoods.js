@@ -21,7 +21,7 @@ export default function SelectedFoods(props) {
       <thead>
         <tr>
           <th colSpan='5'>
-            <h3>Selected foods</h3>
+            <h3 className='selected__header'>Selected foods</h3>
           </th>
         </tr>
         <tr>
