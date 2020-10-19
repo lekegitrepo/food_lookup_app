@@ -1,15 +1,16 @@
 /* eslint-disable no-undef */
 function search(query, cb) {
-  return fetch(`api/food?q=${query}`, {
+  return fetch(`https://foodlookupapi.herokuapp.com/api/food?q=${query}`, {
     accept: 'application/json'
   }).then(checkStatus)
     .then(parseJSON)
     .then(cb);
 }
 
+// "proxy": "https://foodlookupapi.herokuapp.com/",
+
 function checkStatus(response) {
   console.log('raw response: ', response)
-  console.log('convert to json response: ', response.json())
   if (response.status >= 200 && response.status < 300) {
     return response;
   }
