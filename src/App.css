@@ -1,10 +1,10 @@
-.selectedfood__header {
-  text-align: center;
-  text-transform: uppercase;
+.food__header {
+  margin: 2em;
 }
 
-.selected__food {
-  cursor: pointer;
+.food__header, .selectedfood__header {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .remove {

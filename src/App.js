@@ -23,7 +23,10 @@ class App extends Component {
     const { selectedFoods } = this.state;
 
     return (
-      <div className='App'>
+      <section className='App'>
+        <header className='food__header'>
+          <h2>Food Search</h2>
+        </header>
         <div className='ui text container'>
           <SelectedFoods
             foods={selectedFoods}
@@ -33,7 +36,7 @@ class App extends Component {
             onFoodClick={this.addFood}
           />
         </div>
-      </div>
+      </section>
     );
   }
 }
